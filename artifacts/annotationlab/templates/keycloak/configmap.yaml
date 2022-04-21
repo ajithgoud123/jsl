@@ -4,10 +4,10 @@ metadata:
   name: {{ include "annotationlab.fullname" . }}-keycloak-config
   labels:
     {{- include "annotationlab.labels" . | nindent 4 }}
-  annotations:
-    "helm.sh/hook": post-install,post-upgrade
-    "helm.sh/hook-weight": "3"
-    "helm.sh/hook-delete-policy": before-hook-creation,hook-succeeded
+#  annotations:
+#    "helm.sh/hook": post-install,post-upgrade
+#    "helm.sh/hook-weight": "3"
+#    "helm.sh/hook-delete-policy": before-hook-creation,hook-succeeded
 data:
   kcadm.sh: |-
     #!/bin/bash
