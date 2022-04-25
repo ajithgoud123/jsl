@@ -4,8 +4,8 @@ metadata:
   name: "{{ include "annotationlab.fullname" . }}-test-connection"
   labels:
     {{- include "annotationlab.labels" . | nindent 4 }}
-  annotations:
-    "helm.sh/hook": test-success
+#  annotations:
+#    "helm.sh/hook": test-success
 spec:
   containers:
     - name: wget

@@ -6,8 +6,8 @@ metadata:
   labels:
     {{- include "keycloak.labels" . | nindent 4 }}
     app.kubernetes.io/component: test
-  annotations:
-    helm.sh/hook: test
+#  annotations:
+#    helm.sh/hook: test
 spec:
   securityContext:
     {{- toYaml .Values.test.podSecurityContext | nindent 4 }}
