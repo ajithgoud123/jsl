@@ -216,7 +216,7 @@ extraNetworkPolicies:
 ingress:
   enabled: true
   # defaultBackend force keycloak and annotationlab in the same ingress resource
-  defaultBackend: true
+  defaultBackend: false
   uploadLimitInMegabytes: 16
   servicePort: http
   annotations: {}
