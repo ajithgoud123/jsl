@@ -10,7 +10,7 @@
 
 replicas: 1
 image:
-  repository: johnsnowlabs/annotationlab
+  repository: acrjslalab.azurecr.io/annotationlab
   tag: "3.0.1"
   pullPolicy: IfNotPresent
 
@@ -194,7 +194,7 @@ extraEnv: |
 
 activelearning:
   image:
-    repository: johnsnowlabs/annotationlab
+    repository: acrjslalab.azurecr.io/annotationlab
     tag: "active-learning-3.0.1"
 
   extraEnv: |
@@ -361,11 +361,11 @@ airflow:
 
   images:
     airflow:
-      repository: johnsnowlabs/annotationlab
+      repository: acrjslalab.azurecr.io/annotationlab
       tag: dataflows-3.0.1
 
     redis:
-      repository: redis
+      repository: acrjslalab.azurecr.io/redis
       tag: 6.2.6-buster
  
   networkPolicies:
